@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:applicationandroid="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.B210109058"
+        tools:targetApi="31">
+        <activity
+            android:name=".SliderOperations"
+            android:exported="true" />
+        <activity
+            android:name=".RecycleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecycleActivity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".PopulationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ImageSave"
+            android:exported="true" />
+        <activity
+            android:name=".CityDistrictsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PopulationDistributionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HistoricalPlacesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

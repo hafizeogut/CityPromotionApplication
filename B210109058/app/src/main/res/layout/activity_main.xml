@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- CardView containing ImageSlider -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="259dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="20dp">
+
+        <!-- ImageSlider inside CardView -->
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="259dp"
+            app:iss_auto_cycle="true"
+            app:iss_corner_radius="10"
+            app:iss_delay="1000"
+            app:iss_period="2000"
+            app:iss_title_background="@drawable/slider_bg">
+
+        </com.denzcoskun.imageslider.ImageSlider>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="257dp"
+
+        android:layout_below="@+id/cardView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="31dp"
+        android:padding="4dp">
+
+        <!-- City Name Row -->
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cityName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_border"
+                android:fontFamily="@font/architects_daughter"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/cityName"
+                android:textColor="@color/purple"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cityDescription"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:layout_weight="1"
+                android:background="@drawable/table_border"
+                android:fontFamily="@font/architects_daughter"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="@string/cityText"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="26dp"
+        android:clickable="true"
+        android:contentDescription="@string/register"
+        android:focusable="true"
+        android:fontFamily="@font/architects_daughter"
+
+        android:gravity="center"
+        android:onClick="register"
+        android:padding="8dp"
+        android:text="@string/register"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ExtraText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="173dp"
+        android:layout_height="62dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="103dp"
+        android:accessibilityLiveRegion="polite"
+        android:clickable="true"
+        android:contentDescription="@string/login_description"
+        android:focusable="true"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:onClick="login"
+        android:padding="8dp"
+        android:text="@string/login"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

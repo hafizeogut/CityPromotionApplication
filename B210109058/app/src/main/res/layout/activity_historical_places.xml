@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoricalPlacesActivity"
+    tools:ignore="ScrollViewCount">
+
+
+    <ImageView
+        android:id="@+id/logout2"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="664dp"
+        android:contentDescription="@string/historicalPlacesSmall"
+        android:onClick="logOut"
+        android:src="@drawable/baseline_close_24" />
+
+    <TextView
+        android:id="@+id/historicalPlaceText"
+        android:layout_width="326dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="68dp"
+        android:autofillHints="none"
+        android:clickable="true"
+        android:contentDescription="@string/historicalPlacesSmall"
+        android:focusable="true"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/historicalPlaces"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="367dp"
+        android:id="@+id/historicalAdminPanel"
+        android:layout_above="@+id/adminPanel"
+        android:layout_below="@+id/historicalPlaceText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="-81dp"
+        android:background="@drawable/edit_text_bg"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="368dp"
+
+            android:layout_height="280dp"
+            android:background="@drawable/edit_text_bg"
+
+            android:scrollbars="vertical">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/adminPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="259dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="94dp"
+        android:background="@drawable/edit_text_bg"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="243dp"
+            android:id="@+id/historicalAdminLayout"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:orientation="vertical"
+
+
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/historicalUpload"
+                android:layout_width="89dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="152dp"
+                android:layout_toStartOf="@+id/imageHistorical"
+                android:background="@drawable/table_border"
+                android:contentDescription="@string/historicalPlaces"
+                android:fontFamily="@font/architects_daughter"
+                android:gravity="center"
+                android:text="@string/upload"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+
+                android:textStyle="bold"
+                tools:ignore="InefficientWeight,SmallSp" />
+
+            <ImageView
+                android:id="@+id/imageHistorical"
+                android:layout_width="94dp"
+                android:layout_height="94dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toStartOf="@+id/progressBar"
+                android:contentDescription="@string/upload"
+                android:onClick="uploadImage"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_add_photo_alternate_24"
+                tools:ignore="OnClick" />
+
+            <EditText
+                android:id="@+id/historicalInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="65dp"
+                android:autofillHints="none"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/architects_daughter"
+                android:hint="@string/historicalPlacesSmall"
+
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple" />
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="5dp"
+                android:autofillHints="none"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/purple"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:fontFamily="@font/architects_daughter"
+                android:onClick="save"
+                android:text="@string/add"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/btn_create"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/purple"
+                android:clickable="true"
+                android:contentDescription="@string/delete"
+                android:focusable="true"
+                android:fontFamily="@font/architects_daughter"
+                android:onClick="delete"
+                android:text="@string/delete"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="5dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/btn_delete"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/purple"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/architects_daughter"
+                android:onClick="update"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="OnClick" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="33dp"
+                android:indeterminate="@color/blue"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/home_text_population2"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="22dp"
+        android:accessibilityLiveRegion="polite"
+        android:clickable="true"
+        android:contentDescription="@string/home_description"
+        android:focusable="true"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:onClick="home"
+        android:padding="8dp"
+        android:text="@string/home"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name" translatable="false">B210109058</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="surname" translatable="false">Surname</string>
+    <string name="phone">Number Phone</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="register" translatable="false">REGISTER</string>
+    <string name="login">LOGIN</string>
+    <string name="todo">Go to Register</string>
+    <string name="signup">SING UP</string>
+    <string name="home">HOME</string>
+    <string name="login_description">Go to Login</string>
+    <string name="home_description">Go to Home</string>
+    <string name="please_wait">Registering,please wait…</string>
+    <string name="user_icon">User Icon</string>
+    <string name="cityName">CITY NAME</string>
+    <string name="cityText">Center</string>
+    <string name="populationDistributionSmall">Population Distribution</string>
+    <string name="populationDistribution">POPULATION DISTRIBUTION</string>
+    <string name="cityDistricts">CITY DISTRICTS</string>
+    <string name="cityDistrictsSmall">City Districts</string>
+    <string name="historicalPlacesSmall">Historical Places</string>
+    <string name="historicalPlaces">HISTORICAL PLACES</string>
+    <string name="year">YEAR</string>
+    <string name="image">Image</string>
+    <string name="year1">YEAR 1</string>
+    <string name="year2">YEAR 2</string>
+    <string name="year3">YEAR 3</string>
+    <string name="population">POPULATION</string>
+    <string name="population1">POPULATION 1</string>
+    <string name="population2">POPULATION 2</string>
+    <string name="population3">POPULATION 3</string>
+    <string name="districts1">Districts 1</string>
+    <string name="districts2">Districts 2</string>
+    <string name="districts3">Districts 3</string>
+    <string name="add">SAVE</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="upload">Upload</string>
+    <string name="saveText">Saving…</string>
+    <string name="loadText">Loading…</string>
+    <string name="place_description">Place Description</string>
+    <string name="go_to_slider">Slider Operations</string>
+</resources>

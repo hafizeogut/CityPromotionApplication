@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/recCard"
+    android:layout_width="350dp"
+    android:layout_height="79dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/edit_text_bg"
+    android:orientation="vertical"
+    tools:context=".RecycleActivity"
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="341dp"
+        android:layout_height="73dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edit_text_bg"
+        tools:context=".HistoricalPlacesActivity"
+        tools:ignore="ScrollViewCount">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recImage"
+            android:layout_width="63dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="40dp"
+            android:contentDescription="@string/historicalPlaces"
+            android:src="@drawable/baseline_add_photo_alternate_24" />
+
+        <TextView
+            android:id="@+id/recyclerHistorical"
+
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/recImage"
+            android:autofillHints="none"
+            android:clickable="true"
+            android:onClick="showDetails"
+            android:contentDescription="@string/historicalPlacesSmall"
+            android:focusable="true"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:padding="8dp"
+
+            android:text="@string/historicalPlaces"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

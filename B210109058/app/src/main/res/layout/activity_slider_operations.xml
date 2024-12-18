@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SliderOperations">
+
+
+    <ImageView
+        android:id="@+id/logout5"
+        android:layout_width="78dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="655dp"
+        android:contentDescription="@string/historicalPlacesSmall"
+        android:onClick="logOut"
+        android:src="@drawable/baseline_close_24"
+        tools:ignore="OnClick" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/adminPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/edit_text_bg"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/sliderOperationLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="246dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:orientation="vertical"
+
+
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/sliderUpload"
+                android:layout_width="89dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/table_border"
+
+                android:contentDescription="@string/historicalPlaces"
+                android:fontFamily="@font/architects_daughter"
+                android:gravity="center"
+                android:text="@string/upload"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="InefficientWeight,SmallSp" />
+
+            <ImageView
+                android:id="@+id/sliderImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="65dp"
+                android:contentDescription="@string/upload"
+                android:onClick="uploadImage"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_add_photo_alternate_24"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="5dp"
+                android:autofillHints="none"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/purple"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:fontFamily="@font/architects_daughter"
+                android:onClick="save"
+                android:text="@string/add"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/btn_create"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/purple"
+                android:clickable="true"
+                android:contentDescription="@string/delete"
+                android:focusable="true"
+                android:fontFamily="@font/architects_daughter"
+                android:onClick="delete"
+                android:text="@string/delete"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="5dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/btn_delete"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/purple"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/architects_daughter"
+                android:onClick="update"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="OnClick" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="59dp"
+                android:layout_height="59dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="117dp"
+                android:indeterminate="@color/blue"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="390dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="20dp">
+
+        <!-- ImageSlider inside CardView -->
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iss_auto_cycle="true"
+            app:iss_corner_radius="10"
+            app:iss_delay="1000"
+            app:iss_period="2000"
+            app:iss_title_background="@drawable/slider_bg">
+
+        </com.denzcoskun.imageslider.ImageSlider>
+
+    </androidx.cardview.widget.CardView>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="23dp"
+        android:importantForAccessibility="no">
+
+        <!-- City Name Row -->
+
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="367dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_border"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:text="@string/cityName"
+            android:textColor="@color/purple"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/home2_text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="none"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:onClick="home2"
+        android:padding="8dp"
+        android:text="@string/home"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.551"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
