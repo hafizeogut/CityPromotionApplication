@@ -13,16 +13,16 @@
 
     <ImageView
         android:id="@+id/logout2"
-        android:layout_width="67dp"
-        android:layout_height="67dp"
+        android:layout_width="73dp"
+        android:layout_height="80dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
         android:layout_marginStart="40dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="664dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="687dp"
         android:contentDescription="@string/historicalPlacesSmall"
         android:onClick="logOut"
         android:src="@drawable/baseline_close_24" />
@@ -35,7 +35,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="57dp"
-        android:layout_marginTop="61dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="68dp"
         android:autofillHints="none"
         android:clickable="true"
@@ -64,7 +64,7 @@
         android:layout_alignParentEnd="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="-81dp"
         android:background="@drawable/edit_text_bg"
@@ -78,10 +78,7 @@
             android:layout_height="280dp"
             android:background="@drawable/edit_text_bg"
 
-            android:scrollbars="vertical">
-
-
-        </androidx.recyclerview.widget.RecyclerView>
+            android:scrollbars="vertical" />
 
 
     </androidx.cardview.widget.CardView>
@@ -108,9 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="243dp"
             android:id="@+id/historicalAdminLayout"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+
             android:background="@drawable/edit_text_bg"
             android:orientation="vertical"
 
@@ -119,15 +114,15 @@
 
             <TextView
                 android:id="@+id/historicalUpload"
-                android:layout_width="89dp"
-                android:layout_height="58dp"
+                android:layout_width="95dp"
+                android:layout_height="68dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="9dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="24dp"
-                android:layout_marginBottom="152dp"
+                android:layout_marginBottom="145dp"
                 android:layout_toStartOf="@+id/imageHistorical"
                 android:background="@drawable/table_border"
                 android:contentDescription="@string/historicalPlaces"
@@ -142,10 +137,10 @@
 
             <ImageView
                 android:id="@+id/imageHistorical"
-                android:layout_width="94dp"
-                android:layout_height="94dp"
-                android:layout_marginEnd="30dp"
-                android:layout_toStartOf="@+id/progressBar"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="95dp"
                 android:contentDescription="@string/upload"
                 android:onClick="uploadImage"
                 android:scaleType="fitXY"
@@ -163,8 +158,8 @@
                 android:layout_gravity="start|center_vertical"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="65dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="60dp"
                 android:autofillHints="none"
                 android:background="@drawable/edit_text_bg"
                 android:fontFamily="@font/architects_daughter"
@@ -252,8 +247,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="33dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="130dp"
                 android:indeterminate="@color/blue"
                 android:visibility="invisible" />
 

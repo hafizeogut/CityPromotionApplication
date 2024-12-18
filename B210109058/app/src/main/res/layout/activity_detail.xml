@@ -9,24 +9,24 @@
     tools:context=".DetailActivity"
     tools:ignore="UseCompoundDrawables">
 
+
     <ImageView
         android:id="@+id/feedbackPage"
-        android:layout_width="66dp"
-        android:layout_height="72dp"
+        android:layout_width="83dp"
+        android:layout_height="84dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="-3dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="-23dp"
+        android:layout_marginEnd="3dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="662dp"
+        android:layout_marginBottom="670dp"
         android:contentDescription="@string/historicalPlacesSmall"
         android:onClick="feedbackPage"
         android:src="@drawable/baseline_arrow_circle_right_24" />
-
 
     <TextView
         android:id="@+id/detailTittle"
@@ -36,9 +36,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="23dp"
         android:autofillHints="none"
         android:clickable="true"
         android:contentDescription="@string/historicalPlacesSmall"
@@ -46,16 +46,12 @@
         android:fontFamily="@font/architects_daughter"
         android:gravity="center"
         android:text="@string/historicalPlaces"
-        android:textColor="@color/purple"
+        android:textColor="@color/blue"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
-
-
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -63,16 +59,16 @@
         android:layout_height="350dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="230dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="2dp"
         app:cardBackgroundColor="@color/blue"
         app:cardCornerRadius="12dp"
         app:cardElevation="20dp">
 
         <ImageView
             android:id="@+id/detailImage"
-            android:layout_width="370dp"
+            android:layout_width="396dp"
 
-            android:layout_height="match_parent"
+            android:layout_height="350dp"
             android:layout_below="@+id/detailTittle"
             android:contentDescription="@string/historicalPlaces"
             android:src="@drawable/baseline_add_photo_alternate_24" />

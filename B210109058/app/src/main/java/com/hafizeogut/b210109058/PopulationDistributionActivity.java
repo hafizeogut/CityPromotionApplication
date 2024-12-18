@@ -77,6 +77,7 @@ public class PopulationDistributionActivity extends AppCompatActivity {
                         adminTablePanel.setVisibility(View.VISIBLE);
                     } else {
                         adminTablePanel.setVisibility(View.GONE);
+                        hideAdminComponents();
                     }
                 }
             });
@@ -98,20 +99,34 @@ public class PopulationDistributionActivity extends AppCompatActivity {
         if (validateInputs(yearInput, populationInput)) {
             int year = Integer.parseInt(yearInput);
             int population = Integer.parseInt(populationInput);
-            String id = databaseReference.push().getKey();
 
-            if (id != null) {
-                PopulationData populationData = new PopulationData(id, year, population);
-                databaseReference.child(id).setValue(populationData)
-                        .addOnSuccessListener(aVoid -> {
-                            Toast.makeText(this, "Data saved successfully!", Toast.LENGTH_SHORT).show();
-                            clearInputs();
-                            loadData();
-                        })
-                        .addOnFailureListener(e -> Toast.makeText(this, "Error saving data: " + e.getMessage(), Toast.LENGTH_SHORT).show());
+            // Mevcut yılları kontrol et
+            boolean isYearExist = false;
+            for (PopulationData data : yearPopulationList) {
+                if (data.getYear() == year) {
+                    isYearExist = true;
+                    break;
+                }
+            }
+
+            if (isYearExist) {
+                Toast.makeText(this, "Already available this year!", Toast.LENGTH_SHORT).show();
+            } else {
+                String id = databaseReference.push().getKey();
+                if (id != null) {
+                    PopulationData populationData = new PopulationData(id, year, population);
+                    databaseReference.child(id).setValue(populationData)
+                            .addOnSuccessListener(aVoid -> {
+                                Toast.makeText(this, "Data saved successfully!", Toast.LENGTH_SHORT).show();
+                                clearInputs();
+                                loadData();
+                            })
+                            .addOnFailureListener(e -> Toast.makeText(this, "Error saving data: " + e.getMessage(), Toast.LENGTH_SHORT).show());
+                }
             }
         }
     }
+
 
     public void delete(View view) {
         if (selectedKey != null) {

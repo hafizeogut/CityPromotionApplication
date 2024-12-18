@@ -10,18 +10,18 @@
 
     <ImageView
         android:id="@+id/logout5"
-        android:layout_width="78dp"
-        android:layout_height="75dp"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginTop="-13dp"
+        android:layout_marginEnd="-7dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="655dp"
+        android:layout_marginBottom="670dp"
         android:contentDescription="@string/historicalPlacesSmall"
         android:onClick="logOut"
         android:src="@drawable/baseline_close_24"
@@ -35,7 +35,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="17dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="63dp"
@@ -47,10 +47,7 @@
         <RelativeLayout
             android:id="@+id/sliderOperationLayout"
             android:layout_width="wrap_content"
-            android:layout_height="246dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_height="260dp"
             android:background="@drawable/edit_text_bg"
             android:orientation="vertical"
 
@@ -59,8 +56,8 @@
 
             <TextView
                 android:id="@+id/sliderUpload"
-                android:layout_width="89dp"
-                android:layout_height="38dp"
+                android:layout_width="105dp"
+                android:layout_height="48dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="5dp"
@@ -72,7 +69,7 @@
                 android:gravity="center"
                 android:text="@string/upload"
                 android:textColor="@color/blue"
-                android:textSize="15sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 tools:ignore="InefficientWeight,SmallSp" />
 
@@ -83,8 +80,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="105dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="2dp"
                 android:layout_marginBottom="65dp"
                 android:contentDescription="@string/upload"
                 android:onClick="uploadImage"
@@ -164,15 +161,16 @@
 
             <ProgressBar
                 android:id="@+id/progressBar"
-                android:layout_width="59dp"
-                android:layout_height="59dp"
+                android:layout_width="131dp"
+                android:layout_height="118dp"
                 android:layout_alignParentTop="true"
+
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
-                android:layout_marginTop="54dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="117dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginBottom="85dp"
                 android:indeterminate="@color/blue"
                 android:visibility="invisible" />
 
@@ -184,11 +182,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="390dp"
+        android:layout_width="400dp"
         android:layout_height="270dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="10dp"
         app:cardBackgroundColor="@color/blue"
         app:cardCornerRadius="12dp"
         app:cardElevation="20dp">
@@ -210,15 +208,15 @@
 
     <TableLayout
         android:id="@+id/table"
-        android:layout_width="379dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardView"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="23dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="23dp"
+        android:layout_marginEnd="10dp"
         android:importantForAccessibility="no">
 
         <!-- City Name Row -->
@@ -226,7 +224,7 @@
 
         <TextView
             android:id="@+id/cityName"
-            android:layout_width="367dp"
+            android:layout_width="400dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:background="@drawable/table_border"

@@ -11,11 +11,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="225dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="15dp"
         app:cardBackgroundColor="@color/blue"
         app:cardCornerRadius="12dp"
         app:cardElevation="20dp">
@@ -37,15 +37,15 @@
 
     <TableLayout
         android:id="@+id/table"
-        android:layout_width="wrap_content"
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardView"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="15dp"
         android:importantForAccessibility="no">
 
         <!-- City Name Row -->
@@ -191,7 +191,7 @@
     <TextView
         android:id="@+id/home2_text_home"
         android:layout_width="wrap_content"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
