@@ -38,6 +38,11 @@ City Promotion Application Anndroid Java
 
 
 
+# UYGULAMA ŞEMASI
+![image](https://github.com/user-attachments/assets/f4ad7719-32a2-4067-b548-603332787557)
+
+
+
 
 
 
